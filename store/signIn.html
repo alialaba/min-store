@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login In Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+    <div class="container login">
+        <div class="hero-form">
+            <h2>JsMinna Store</h2>
+        </div>
+
+        <form action="" class="form" id="sign_in">
+            <div class="form-title">
+                <h2>Sign In</h2>
+            </div>
+
+            <div class="field success">
+                <label for="">Email</label>
+                <input type="email" id='mail2' name='email' placeholder="Email">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small> -->
+            </div>
+
+            <div class="field error">
+                <label for="">Password</label>
+                <input type="password" id='pwd3' name='psd' placeholder="Password">
+                <!-- <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small> -->
+            </div>
+            <div>
+
+                <button type="submit" onClick="signInHandler(event)">Login</button>
+            </div>
+        </form>
+        <p><a href="../signUp.html">Create Account</a></p>
+
+
+    </div>
+    <script src="../script/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+::before,
+ ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #cbd5e0 0% 0% no-repeat padding-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    background: #fff 0% 0% no-repeat padding-box;
+    box-shadow: 10px 10px 20px #00000029;
+    opacity: 1;
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    overflow: hidden;
+    border-left: 10px solid blue;
+    border-right: 10px solid red;
+    border-radius: 5px;
+}
+
+.form {
+    margin-top: -2em;
+    padding: 20px 40px;
+}
+
+.login {
+    margin-top: 2em;
+}
+
+.hero-form {
+    color: #19B3D3;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-title {
+    color: #22242A;
+    font-weight: 900;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+/* */
+
+input[type=checkbox] {
+    margin: 10px 0 12px 0;
+    color: #fff;
+}
+
+input[type=text],
+[type=password],
+[type=email],
+[type=number],
+select {
+    width: 100%;
+    line-height: 1.5;
+    padding: 12px 10px;
+    margin: 10px 0 3px 0;
+    border: .7px solid lightgray;
+    border-radius: 7px;
+    font-size: .9rem;
+    box-sizing: border-box;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+select:hover,
+:focus {
+    outline: none;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+}
+
+button {
+    background: linear-gradient(45deg, red, blue);
+    border: none;
+    padding: 1.1em 2.5em;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 7px;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+}
+
+a {
+    color: #19B3D3;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+.forget {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+
+/* success and error display */
+
+.field i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+
+/* .field.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.field.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+}
+
+.field.error input {
+    border-color: #e74c3e;
+} */
+
+
+/* .field.error small {
+    visibility: visible;
+    color: red;
+}
+
+.field.success input {
+    border-color: #2ecc71;
+}
+
+.field.success small {
+    visibility: hidden;
+    color: #2ecc71;
+}
+
+.field small {
+    visibility: hidden;
+    position: relative;
+    bottom: 0;
+    left: 0;
+} */
+
+.field {
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+
+/* success and error display */
