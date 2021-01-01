@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script type="text/javascript" src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+</head>
+
+<body>
+    <main class="landing-page">
+        <header>
+
+            <div class="container row flex">
+                <div class="menu-icon">
+                    <span class="hamburger"></span>
+                </div>
+                <a href="" class="logo">
+                    <small>JsStore</small>
+                </a>
+                <nav class="nav">
+                    <div class="nav__list nav__list-primary">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+                    </div>
+
+                    <div class="nav__list">
+                        <li class="nav__item"><a href="./store/signIn.html" class="nav__link"><i class="fas fa-user fa-x2"></i>           Signin</a></li>
+                        <li class="nav__item"><a href="./store/signUp.html" class="nav__link btn-up">  Signup</a></li>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero__title">FIRST ONLINE SHOPPING IN AFRICA</h1>
+
+                </div>
+                <a href="#" class="btn-in">Shop Now</a>
+            </div>
+
+
+        </section>
+    </main>
+    <script>
+        const menuBtn = document.querySelector(".menu-icon");
+        const nav = document.querySelector(".nav");
+
+        menuBtn.addEventListener("click", () => {
+            nav.classList.toggle('nav-visible');
+
+        })
+    </script>
+</body>
+
+</html>

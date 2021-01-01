@@ -104,6 +104,11 @@ button:hover {
     outline: none;
 }
 
+.field.error small {
+    color: red;
+    visibility: hidden;
+}
+
 a {
     color: #19B3D3;
     text-align: center;
@@ -129,48 +134,8 @@ p {
     visibility: hidden;
 }
 
-
-/* .field.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-
-.field.error i.fa-exclamation-circle {
-    color: red;
-    visibility: visible;
-}
-
-.field.error input {
-    border-color: #e74c3e;
-} */
-
-
-/* .field.error small {
-    visibility: visible;
-    color: red;
-}
-
-.field.success input {
-    border-color: #2ecc71;
-}
-
-.field.success small {
-    visibility: hidden;
-    color: #2ecc71;
-}
-
-.field small {
-    visibility: hidden;
-    position: relative;
-    bottom: 0;
-    left: 0;
-} */
-
 .field {
     padding-bottom: 3px;
     margin-bottom: 2px;
     position: relative;
 }
-
-
-/* success and error display */

@@ -7,10 +7,15 @@
     <title>Js || store</title>
     <link rel="stylesheet" href="../style/dash.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
+    <script>
+        const user = JSON.parse(sessionStorage.getItem("user"));
+        if (!user) {
+            window.location.href = "/store/signIn.html";
+        }
+    </script>
 </head>
 
-<body>
+<body onload="fetchAllData()">
     <div class="sidebar">
         <div class="sidebar-header">
             <h3 class="brand-name">
@@ -38,7 +43,12 @@
                         <span>Suggested</span>
                     </a>
                 </li>
-
+                <li class="sidebar-menu-list__two">
+                    <a href="#">
+                        <i class="far fa-eye"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -48,6 +58,7 @@
 
         <header>
             <h3>Welcome Back, &#128526;</h3>
+            <!-- <a href="#" class="btn">Logout</a> -->
         </header>
         <main class="main">
             <!-- <h3>Suggestion Box</h3> -->
@@ -55,33 +66,33 @@
                 <!-- <div class="form-header">
                     <h2>Sign up</h2>
                 </div> -->
-                <form action="" class="form">
+                <form action="" class="form" id="suggest-item">
                     <div class="form-title">
                         <h2>Suggestions Box</h2>
                     </div>
 
-                    <div class="field ">
+                    <div class="field">
                         <label for="">Item Name</label>
                         <input type="text" id='name' name='name'>
                     </div>
-                    <div class="field ">
+                    <div class="field">
                         <label for="">Item Description</label>
                         <input type="text" id='describe' name='describe'>
                     </div>
                     <div class="field">
                         <label for="">Category</label>
-                        <select name="" id="gender">
+                        <select name="Category" id="gender">
                         <option value="" disabled selected>Select Category</option>
-                        <option value="">Electronics</option>
-                         <option value="">Grocery</option>
-                        <option value="">Furniture</option>
+                        <option value="Electronics">Electronics</option>
+                         <option value="Grocery">Grocery</option>
+                        <option value="Furniture">Furniture</option>
                     </select>
                     </div>
                     <div class="field ">
                         <label for="">Reason for Suggesting</label>
-                        <textarea name="" id="" cols="5" rows="5"></textarea>
+                        <textarea name="reason" id="" cols="5" rows="5"></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button type="submit" onClick="suggestHandler(event)">Submit</button>
                 </form>
             </div>
         </main>
@@ -89,7 +100,7 @@
 
         </footer>
     </div>
-
+    <script src="../script/index.js"></script>
 
 
 </body>

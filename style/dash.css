@@ -176,6 +176,11 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    background: red;
+    color: #ffffff;
+}
+
 
 /* suggested section */
 
